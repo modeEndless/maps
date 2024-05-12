@@ -1,0 +1,26 @@
+@import './base.css';
+@import './utility.scss';
+
+html,
+body {
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(to right, #516d74, #04333d);
+    // background: linear-gradient(to right, #242424, #176488);
+    // color: rgba(255, 255, 255, 0.87);
+    font-family: "Raleway";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+}
