@@ -6,13 +6,14 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/maps ",
   plugins: [vue({
     include: [/\.vue$/, /\.md$/],
   }),
   quasar({
     sassVariables: 'src/quasar-variables.sass'
   }),
-],
+  ],
   build: {
     chunkSizeWarningLimit: 1600,
   },
