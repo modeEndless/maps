@@ -226,8 +226,13 @@ const currentZoom = ref(11)
 
 <style scoped lang="scss">
 .default-map {
-  width: 90%;
-  height: 470px;
+  width: 1000px;
+  height: 600px;
+
+  @media screen and (min-width:360px) and (max-width:540px)  {
+    width: 325px;
+    height: 450px;
+  }
 
   border: 2px solid #04333d;
   box-shadow: 1px 1px 3px #04333d;
