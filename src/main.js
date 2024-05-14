@@ -20,7 +20,6 @@ import 'quasar/src/css/index.sass'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
-
 const app = createApp(App);
 
 const router = createRouter({
@@ -30,14 +29,14 @@ const router = createRouter({
 
 app.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyBVo380neE0YlE3Sy1ck8cF9fGCDJSkLjU',
+    key: import.meta.env.VITE_API_URL,
     libraries: "visualization"
   },
 })
 app.use(router)
 app.use(ElementPlus)
 app.use(Quasar, {
-    plugins: {}
+  plugins: {}
 })
 
 app.mount('#app')
