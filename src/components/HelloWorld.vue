@@ -231,7 +231,7 @@ const currentZoom = ref(11)
 
   @media screen and (min-width:360px) and (max-width:540px)  {
     width: 325px;
-    height: 425px;
+    height: 390px;
   }
 
   border: 2px solid #04333d;
